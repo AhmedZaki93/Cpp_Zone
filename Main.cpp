@@ -1,9 +1,9 @@
-/*first leason */
 #include <fstream>
 #include <iostream>
 #include <sstream>
 #include <string>
 #include <vector>
+using std::abs;
 using std::cout;
 using std::ifstream;
 using std::istringstream;
@@ -52,6 +52,17 @@ vector<vector<State>> ReadBoardFile(string path)
     return board;
 }
 
+/** 
+ * Implementation of A* search algorithm
+ */
+vector<vector<State>> Search(vector<vector<State>> grid, int init[2], int goal[2])
+{
+
+    cout << "No path found!"
+         << "\n";
+    return std::vector<vector<State>>{};
+}
+
 string CellString(State cell)
 {
     switch (cell)
@@ -77,6 +88,9 @@ void PrintBoard(const vector<vector<State>> board)
 
 int main()
 {
+    int init[2]{0, 0};
+    int goal[2]{4, 5};
     auto board = ReadBoardFile("1.board");
-    PrintBoard(board);
+    auto solution = Search(board, init, goal);
+    PrintBoard(solution);
 }
