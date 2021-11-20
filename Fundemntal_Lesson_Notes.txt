@@ -1,0 +1,12 @@
+Fundemental of C++ Notes:
+
+Vector standard Functions :
+
+1) <vector>.push_back >>> will add element to end of the vector space 
+
+2) <vector>.back() >>>> will get reference to last element added in vector 
+
+
+3) <vector>.pop_back() >>>> will remove last elemet in vector space
+
+4) <vector>.size() >>>> will get size of vector 
