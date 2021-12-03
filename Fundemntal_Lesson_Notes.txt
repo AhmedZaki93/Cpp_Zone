@@ -10,3 +10,23 @@ Vector standard Functions :
 3) <vector>.pop_back() >>>> will remove last elemet in vector space
 
 4) <vector>.size() >>>> will get size of vector 
+
+-----------------------------------------------------------------------------
+in make and Cmake build system tool 
+>> * operator means wildcard 
+-----------------------------------------------------------------------------
+CMakeLists.txt >> Cmake build system tool :
+first create CMakeLists.txt file ,which include :
+
+1. the minimum version of Cmake and C++ required to build the project 
+2. project name to use for build process 
+3.add executable ( executable_name  path to src1  path to src2 ..)
+4.make build directory inside the same directory of CMakeLists.txt 
+5. inside build directory use command cmake to initiate the make tool >>Cmake ..
+6. after cmake command use command >>make to scane dependencies .
+7.you can now run the executable in build directory by using ./<executable_name>
+---------------------------------------------------------------------------------
+Reference vs pointers in C++ :
+Reference Example >>  int i =10 ;
+                      int & ref = i;
+---------------------------------------------------------------------------------
